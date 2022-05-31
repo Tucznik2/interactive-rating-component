@@ -12,12 +12,12 @@ RATING_BUTTONS.forEach((button) => {
 });
 
 SUBMIT_BUTTON.addEventListener("click", () => {
-  const RATING_STATE = document.getElementsByClassName("rating-state");
-  const THANK_STATE = document.getElementsByClassName("thank-state");
-  RATING_STATE[0].classList.add("invisible");
-  THANK_STATE[0].classList.remove("invisible");
-  const rateValue = document.querySelector('.rating-button-selected').value;
-  RATE.textContent = `You selected ${rateValue} our of 5`;
+  const selectedRate = document.querySelector(".rating-button-selected");
+  if (selectedRate) {
+    const RATING_STATE = document.getElementsByClassName("rating-state");
+    const THANK_STATE = document.getElementsByClassName("thank-state");
+    RATING_STATE[0].classList.add("invisible");
+    THANK_STATE[0].classList.remove("invisible");
+    RATE.textContent = `You selected ${selectedRate.value} our of 5`;
+  }
 });
-
-

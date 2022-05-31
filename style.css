@@ -24,93 +24,102 @@ body {
   place-items: center;
   min-height: 96vh;
 }
-.container{
-    background-color: var(--neutral-dark-blue);
-    width: 90%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    border-radius: 1rem;
-    max-width: 400px;
-    height: 400px;
+.container {
+  background-color: var(--neutral-dark-blue);
+  width: 90%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  max-width: 400px;
+  height: 400px;
 }
-.star{
-    background: url('images/icon-star.svg') no-repeat;
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--neutral-dark-blue);
-    align-self: flex-start;
+.star {
+  background: url("images/icon-star.svg") no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  align-self: flex-start;
 }
-.card-title{
-    color: var(--neutral-white);
-    font-size: 2rem;
-    align-self: flex-start;
-    font-weight: 700;
+.card-title {
+  color: var(--neutral-white);
+  font-size: 2rem;
+  align-self: flex-start;
+  font-weight: 700;
 }
-.card-text{
-    font-size: 0.9rem;
-    color: var(--neutral-light-grey);
-    font-weight: 400;
-    line-height: 1.5rem;
+.card-text {
+  font-size: 0.9rem;
+  color: var(--neutral-light-grey);
+  font-weight: 400;
+  line-height: 1.5rem;
 }
-.ratings{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.ratings {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.rating-button{
-    border: none;
-    background-color: var(--neutral-dark-blue);
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    color: var(--neutral-medium-grey);
+.rating-button {
+  border: none;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--neutral-medium-grey);
+  transition: all 300ms;
 }
-.submit-button{
-    border: none;
-    width: 100%;
-    border-radius: 2rem;
-    background-color: var(--primary-orange);
-    color: var(--neutral-white);
-    font-size: 1rem;
-    font-weight: 700;
-    padding-top: 1rem;
-    padding-bottom: 0.8rem;
-    letter-spacing: 0.1rem;
+.submit-button {
+  border: none;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+  letter-spacing: 0.1rem;
+  transition: all 300ms;
 }
-.submit-button, .rating-button{
-    cursor: pointer;
+.submit-button,
+.rating-button {
+  cursor: pointer;
 }
-.submit-button:hover, .submit-button:active{
-    background-color: var(--neutral-white);
-    color: var(--primary-orange);
+.submit-button:hover,
+.submit-button:active {
+  background-color: var(--neutral-white);
+  color: var(--primary-orange);
 }
-.rating-button:hover, .rating-button:active{
-    background-color: var(--primary-orange);
-    color: var(--neutral-white);
+.rating-button:hover,
+.rating-button:active {
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
 }
-.rating-button-selected{
-    background-color: var(--neutral-light-grey);
-    color: var(--neutral-white);
+.rating-button-selected {
+  background-color: var(--neutral-light-grey);
+  color: var(--neutral-white);
 }
 /* THANK STATE STYLING */
-.thank-state > .card-title, .thank-state > .card-text{
-    align-self: center;
-    text-align: center;
+.thank-state > .card-title,
+.thank-state > .card-text {
+  align-self: center;
+  text-align: center;
 }
-.rate{
-    color: var(--primary-orange);
-    background-color: var(--neutral-very-dark-blue);
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    font-size: 1rem;
+.rate {
+  color: var(--primary-orange);
+  background-color: var(--neutral-very-dark-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
 }
-.invisible{
-    display: none;
+.invisible {
+  display: none;
 }
-footer{
-    color: #fff;
+footer {
+  color: #fff;
 }
